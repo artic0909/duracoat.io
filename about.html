@@ -56,6 +56,35 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+      .scr {
+        display: none;
+      }
+      @media (max-width: 588px) {
+        table {
+          width: 800px !important;
+        }
+        .table_main {
+          width: fit-content;
+        }
+        .table_main2 {
+          overflow-y: auto !important;
+        }
+        .scr {
+          display: block;
+        }
+
+        .table_main2::-webkit-scrollbar {
+          display: none;
+        }
+
+        .table_main2 {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      }
+    </style>
   </head>
 
   <body>
